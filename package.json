@@ -1,0 +1,22 @@
+{
+  "name": "bs-personal-site",
+  "version": "0.0.1",
+  "description": "This is my personal site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrysonR/personal-site.git"
+  },
+  "author": "bryson reynolds <me@brysonreynolds.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrysonR/personal-site/issues"
+  },
+  "homepage": "https://github.com/BrysonR/personal-site#readme",
+  "dependencies": {
+    "hapi": "^16.6.2"
+  }
+}
