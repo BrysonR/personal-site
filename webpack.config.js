@@ -29,7 +29,8 @@ const config = {
     },
     context: srcPath,
     plugins: [
-        new webpack.NamedModulesPlugin()
+        new webpack.NamedModulesPlugin(),
+        new webpack.EnvironmentPlugin(['NODE_ENV'])
     ]
 };
 
