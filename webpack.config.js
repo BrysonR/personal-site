@@ -6,8 +6,6 @@ var path = require('path');
 var srcPath = path.join(__dirname, '/src')
 var distPath = path.join(__dirname, '/public');
 
-console.log(process.env.NODE_ENV);
-
 const config = {
     module: {
         loaders: [
