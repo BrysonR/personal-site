@@ -4,7 +4,7 @@
   "description": "This is my personal site.",
   "main": "server.js",
   "scripts": {
-    "start": "babel-node server.js --presets env",
+    "start": "node server.js",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
   },
@@ -12,6 +12,9 @@
     "presets": [
       "env",
       "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
     ]
   },
   "repository": {
@@ -25,10 +28,10 @@
   },
   "homepage": "https://github.com/BrysonR/personal-site#readme",
   "dependencies": {
-    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "dotenv": "^4.0.0",
     "express": "^4.16.2",
-    "hapi": "16.6.2",
-    "nodemon": "^1.12.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
