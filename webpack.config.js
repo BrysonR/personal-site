@@ -59,7 +59,11 @@ if (process.env.NODE_ENV === 'development') {
 if (process.env.NODE_ENV === 'production') {
     config.entry = [
         path.join(srcPath, '/index.js')        
-    ]
+    ];
+
+    config.plugins.push(
+        new webpack.optimize.UglifyJsPlugin()        
+    )
 }
 
 module.exports = config;
