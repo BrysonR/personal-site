@@ -5,7 +5,7 @@ interface HtmlProps extends React.Props<any> {
     initialData: {}
 }
 
-class Html extends React.Component<HtmlProps, any> {
+export class Html extends React.Component<HtmlProps, any> {
     constructor(props: HtmlProps) {
         super(props);
     }
@@ -25,5 +25,3 @@ class Html extends React.Component<HtmlProps, any> {
         )
     }
 }
-
-export default Html;

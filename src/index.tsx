@@ -14,7 +14,7 @@ hydrate(<App {...initialData} />, rootEl);
 
 if (module.hot) {
     module.hot.accept('./App', () => {
-        const NewApp = require('./App').default;
+        const NewApp = App;
         
         hydrate(<App {...initialData} />, rootEl);
     })

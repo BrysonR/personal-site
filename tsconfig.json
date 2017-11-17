@@ -1,14 +1,24 @@
 {
     "compilerOptions": {
-        "outDir": "./built/",  
+        "outDir": "./public/",  
         "strictNullChecks": true,  
         "module": "es6",           
         "jsx": "react",            
         "target": "es5",           
         "allowJs": true,
-        "moduleResolution": "node" 
+        "moduleResolution": "node",
+        "typeRoots": [
+            // add path to @types
+            "node_modules/@types"
+         ]
     },
+    "files": [
+        "./src/constants.ts"
+    ],
     "include": [
         "./src/"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }

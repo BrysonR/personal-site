@@ -19,7 +19,7 @@ const config = {
             {
                 test: /\.(j|t)sx?$/,
                 exclude: /node_modules/,
-                use: 'awesome-typescript-loader'
+                use: 'ts-loader'
             },
             { 
                 enforce: "pre", 
@@ -49,11 +49,11 @@ if (process.env.NODE_ENV === 'development') {
             exclude: /node_modules/,
             loader: 'react-hot-loader/webpack'
         }
-    )
+    );
 
     config.plugins.push(
         new webpack.HotModuleReplacementPlugin()
-    )
+    );
 }
 
 // Production Environment
