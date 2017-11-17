@@ -7,8 +7,8 @@ import webpackConfig from './webpack.config.js';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import express from 'express';
-import Html from './src/Html';
-import App from './src/App';
+import Html from './src/Html.tsx';
+import App from './src/App.tsx';
 
 dotEnv.config();
 
