@@ -28,9 +28,6 @@
   },
   "homepage": "https://github.com/BrysonR/personal-site#readme",
   "dependencies": {
-    "@types/react": "^16.0.23",
-    "@types/react-dom": "^16.0.3",
-    "@types/webpack-env": "^1.13.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-register": "^6.26.0",
     "dotenv": "^4.0.0",
@@ -39,6 +36,10 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
+    "@types/react": "^16.0.24",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-hot-loader": "^3.0.5",
+    "@types/webpack-env": "^1.13.2",
     "awesome-typescript-loader": "^3.3.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -46,6 +47,7 @@
     "babel-preset-react": "^6.24.1",
     "react-hot-loader": "^3.1.2",
     "source-map-loader": "^0.2.3",
+    "ts-loader": "^3.1.1",
     "typescript": "^2.6.1",
     "webpack": "^3.8.1",
     "webpack-dev-middleware": "^1.12.0",

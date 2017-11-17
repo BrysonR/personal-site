@@ -2,7 +2,6 @@ require('dotenv').config();
 var webpack = require('webpack');
 var path = require('path');
 
-
 var srcPath = path.join(__dirname, '/src')
 var distPath = path.join(__dirname, '/public');
 
@@ -44,15 +43,13 @@ if (process.env.NODE_ENV === 'development') {
         path.join(srcPath, '/index.tsx')
     ]
 
-    config.module.loaders.push(
+    config.module.rules.push(
         {
-            test: /\.(j|t)sx?$/,
+            test: /\.tsx?$/,
             exclude: /node_modules/,
             loader: 'react-hot-loader/webpack'
         }
     )
-
-    config.devTool = 'source-map';
 
     config.plugins.push(
         new webpack.HotModuleReplacementPlugin()

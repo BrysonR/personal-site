@@ -4,7 +4,7 @@ interface AppProps extends React.Props<any> {
     owner: string
 }
 
-class App extends React.Component<AppProps, {}> {
+export class App extends React.Component<AppProps, {}> {
     constructor(props: AppProps) {
         super(props);
     }
@@ -15,5 +15,3 @@ class App extends React.Component<AppProps, {}> {
         );
     }
 }
-
-export default App;
