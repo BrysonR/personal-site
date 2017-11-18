@@ -11,7 +11,7 @@ export class App extends React.Component<AppProps, {}> {
     
     render () {
         return (
-            <div>Thanks for viewng {this.props.owner}'s Personal Site</div>
+            <div>Thanks for viewing {this.props.owner}'s Personal Site</div>
         );
     }
 }

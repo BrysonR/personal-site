@@ -13,9 +13,5 @@ const initialData = JSON.parse(jsonData);
 hydrate(<App {...initialData} />, rootEl);
 
 if (module.hot) {
-    module.hot.accept('./App', () => {
-        const NewApp = App;
-        
-        hydrate(<App {...initialData} />, rootEl);
-    })
+    module.hot.accept();
 }
