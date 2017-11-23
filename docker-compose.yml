@@ -1,10 +1,11 @@
-version: "3.3"
+version: "3"
 services:
   web:
     build: .
-    image: personal-site
+    command: nodemon --inspect=0.0.0.0:5858 server.js
+    volumes:
+      - .:/app
+      - /app/node_modules
     ports:
       - "3000:3000"
-    volumes:
-      - ./:/usr/src/app
-      - /usr/src/app/node_modules
+      - "5858:5858"

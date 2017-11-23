@@ -1,13 +1,16 @@
 FROM node:carbon
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY package*.json ./
+COPY package*.json /app/
+
+RUN npm install -g nodemon
 
 RUN npm install
 
-# COPY . .
+COPY . /app
 
 EXPOSE 3000
+EXPOSE 5858
 
-CMD npm run webpack & npm start
+CMD [ 'npm', 'start' ]
