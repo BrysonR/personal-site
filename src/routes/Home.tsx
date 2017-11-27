@@ -15,7 +15,7 @@ export class HomeRoute extends BaseRoute {
     }
 
     public index (req: Request, res: Response, next: NextFunction) {
-        this.title = `Home | B's Site`;
+        this.title = `Home | B's Sit`;
         
         this.render(req, res, Home, homeRouteData);
     }
