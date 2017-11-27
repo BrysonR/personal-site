@@ -2,12 +2,10 @@
     "compilerOptions": {
         "outDir": "./dist/",  
         "strictNullChecks": true,  
-        // "module": "es6",           
         "jsx": "react",            
         "target": "es5",
         "moduleResolution": "node",
         "typeRoots": [
-            // add path to @types
             "node_modules/@types"
          ]
     },
