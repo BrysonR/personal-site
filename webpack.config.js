@@ -42,7 +42,7 @@ const config = {
 if (process.env.NODE_ENV === 'development') {
     config.entry = [
         'react-hot-loader/patch',
-        'webpack-hot-middleware/client?noInfo=false',
+        'webpack-hot-middleware/client?timeout=1000&noInfo=false',
         path.join(srcPath, '/index.tsx')
     ]
 
@@ -57,6 +57,11 @@ if (process.env.NODE_ENV === 'development') {
     config.plugins.push(
         new webpack.HotModuleReplacementPlugin()
     );
+
+    config.watchOptions = {
+        aggregateTimeout: 500,
+        poll: 500
+    }
 }
 
 // Production Environment
