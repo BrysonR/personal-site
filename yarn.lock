@@ -3379,6 +3379,10 @@ supports-color@^4.0.0, supports-color@^4.2.1:
   dependencies:
     has-flag "^2.0.0"
 
+svgjs@^2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/svgjs/-/svgjs-2.6.2.tgz#3b1ea8fbb55148bb227ec05747fc2bf89a465abe"
+
 tapable@^0.2.5, tapable@^0.2.7:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.8.tgz#99372a5c999bf2df160afc0d74bed4f47948cd22"

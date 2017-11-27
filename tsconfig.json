@@ -4,9 +4,7 @@
         "strictNullChecks": true,  
         "module": "es6",           
         "jsx": "react",            
-        "target": "es5",           
-        "allowJs": true,
-        "moduleResolution": "node",
+        "target": "es5",
         "typeRoots": [
             // add path to @types
             "node_modules/@types"

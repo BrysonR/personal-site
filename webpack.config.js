@@ -12,12 +12,12 @@ const config = {
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['.js', '.ts', '.tsx']
+        extensions: ['.ts', '.tsx', '.js']
     },
     module: {
         rules: [
             {
-                test: /\.(j|t)sx?$/,
+                test: /\.tsx?$/,
                 exclude: /node_modules/,
                 use: 'ts-loader'
             },
@@ -29,6 +29,9 @@ const config = {
         ]
     },
     context: srcPath,
+    // ts: {
+    //     configFileName: path.resolve(__dirname, 'tsconfig.json')
+    // },
     plugins: [
         new webpack.NamedModulesPlugin(),
         new webpack.EnvironmentPlugin(['NODE_ENV'])
