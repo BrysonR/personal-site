@@ -2,7 +2,7 @@ version: "3"
 services:
   web:
     build: .
-    command: nodemon --inspect=0.0.0.0:5858 server.js
+    command: nodemon --inspect=0.0.0.0:5858 app.js
     volumes:
       - .:/app
       - /app/node_modules

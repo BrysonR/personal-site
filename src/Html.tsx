@@ -13,6 +13,7 @@ export class Html extends React.Component<HtmlProps, any> {
         return (
             <html>
                 <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
                 </head>
                 <body>
                     <div id="app">

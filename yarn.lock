@@ -44,9 +44,9 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.0.24":
-  version "16.0.24"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.24.tgz#a6fd8015892fe8ae3c17453615f7ebdd2301d818"
+"@types/react@*", "@types/react@^16.0.25":
+  version "16.0.25"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.25.tgz#bf696b83fe480c5e0eff4335ee39ebc95884a1ed"
 
 "@types/serve-static@*", "@types/serve-static@^1.13.1":
   version "1.13.1"
@@ -54,6 +54,16 @@
   dependencies:
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
+
+"@types/svgjs.draggable@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@types/svgjs.draggable/-/svgjs.draggable-0.0.30.tgz#96d074fe79bae319d8d15308c265772cbfab870f"
+
+"@types/typescript@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/typescript/-/typescript-2.0.0.tgz#c433539c98bae28682b307eaa7a0fd2115b83c28"
+  dependencies:
+    typescript "*"
 
 "@types/webpack-env@^1.13.2":
   version "1.13.2"
@@ -4014,6 +4024,10 @@ type-is@~1.6.15:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+typescript@*:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
 
 typescript@^2.1.4, typescript@^2.6.1:
   version "2.6.1"

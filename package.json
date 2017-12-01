@@ -2,9 +2,9 @@
   "name": "bs-personal-site",
   "version": "0.0.1",
   "description": "This is my personal site.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
   },
@@ -28,6 +28,16 @@
   },
   "homepage": "https://github.com/BrysonR/personal-site#readme",
   "dependencies": {
+    "@types/express": "^4.0.39",
+    "@types/express-serve-static-core": "^4.0.57",
+    "@types/node": "^8.0.53",
+    "@types/react": "^16.0.25",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-hot-loader": "^3.0.5",
+    "@types/serve-static": "^1.13.1",
+    "@types/svgjs.draggable": "^0.0.30",
+    "@types/typescript": "^2.0.0",
+    "@types/webpack-env": "^1.13.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-register": "^6.26.0",
     "dotenv": "^4.0.0",
@@ -38,14 +48,6 @@
     "svgjs": "^2.6.2"
   },
   "devDependencies": {
-    "@types/express": "^4.0.39",
-    "@types/express-serve-static-core": "^4.0.57",
-    "@types/node": "^8.0.53",
-    "@types/react": "^16.0.24",
-    "@types/react-dom": "^16.0.3",
-    "@types/react-hot-loader": "^3.0.5",
-    "@types/serve-static": "^1.13.1",
-    "@types/webpack-env": "^1.13.2",
     "awesome-typescript-loader": "^3.3.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
