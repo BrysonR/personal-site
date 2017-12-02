@@ -65,7 +65,7 @@ export class Server {
         const listener = this.app.listen(3000, (data) => {
             const address = listener.address();
             
-            (`Server running at http://localhost:${address.port}`);                        
+            console.log(`Server running at http://localhost:${address.port}`);                        
         });
     }
 }
