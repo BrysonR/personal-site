@@ -3,7 +3,11 @@
         "outDir": "./dist/",  
         "strictNullChecks": true,  
         "jsx": "react",            
-        "target": "es5",
+        "target": "es6",
+        "lib": [
+            "es2017",
+            "dom"
+        ],
         "moduleResolution": "node",
         "typeRoots": [
             "node_modules/@types"

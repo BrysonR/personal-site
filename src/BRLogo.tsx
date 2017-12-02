@@ -7,6 +7,7 @@ const logoStartWidth = 256;
 const logoStartHeight = 140;
 const logoFinalWidth = 128;
 const logoFinalHeight = 70;
+const purple = '#9012FE';
 const pink = '#FF0078'
 
 export class BRLogo extends React.Component<any, any> {
@@ -15,50 +16,79 @@ export class BRLogo extends React.Component<any, any> {
     }
 
     componentDidMount () {
-        const brDrawing = svgJS('brLogo').size(window.innerWidth, window.innerHeight);
+        this.initializeLogo();
+    }
+
+    initializeLogo () {
+        const logoContainer = document.getElementById('brLogo')!;
+        logoContainer.innerHTML = "";
+        let brDrawing = svgJS('brLogo').size(window.innerWidth, window.innerHeight);
+        brDrawing = this.drawLogo(brDrawing);
+        brDrawing = this.animateLogo(brDrawing);
+        // this.translateLogo(brDrawing);
+    }
+
+    drawLogo (drawing) {
         const left = (window.innerWidth / 2) - (logoStartWidth / 2);
         const top = (window.innerHeight / 2) - (logoStartHeight / 2);
-        const el = document.getElementsByTagName('path')[0] as Element;
-        const svgEl = el as SVGPathElement;
-        const initialOffset = svgEl.getTotalLength();
-        
-        console.log(initialOffset);
-        
-        brDrawing
+
+        return drawing
             .path(brPath)
+            .fill('#FFF')
             .x(left)
             .y(top)
             .width(logoStartWidth)
             .height(logoStartHeight)
-            .fill('transparent')
+            .stroke({
+                color: 'white'
+            });
+    }
+
+    animateLogo (drawing) {
+        const initialOffset = drawing.length();
+        const self = this;
+
+        return drawing
             .stroke({ 
-                width: 4, 
                 color: pink,
+                width: 4, 
                 linecap: 'round',
                 linejoin: 'round'
             })
             .attr({
-                id: 'brLogo'
-            });
-
-        brDrawing
-            .attr({
-                'stroke-dasharray': 1000,
-                'stroke-dashoffset': 1000
-            });
-        
-        brDrawing
-            .animate({ease: '<>', duration: 5000})
-            .attr({
-                'stroke-dashoffset': 0
+                'stroke-dasharray': initialOffset,
+                'stroke-dashoffset': initialOffset
+            })
+            .animate({ease: '<>', duration: 3000})
+            .stroke({
+                dashoffset: initialOffset / 2
+            })
+            .after(function () {
+                return self.translateLogo(this)
             });
     }
 
-    drawLogo () {
+    translateLogo (drawing) {
+        drawing
+            .animate({ease: '<>', duration: 3000})
+            .y(17)
+            .width(logoFinalWidth)
+            .height(logoFinalHeight)
+            .fill(purple)
+            .stroke({
+                width: 0
+            });
         
+        this.setState({
+            drawing
+        });
     }
 
     render () {
+        window.onresize = () => {
+            return this.initializeLogo();
+        }
+
         return (
             <div id="brLogo"></div>
         );

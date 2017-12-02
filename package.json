@@ -8,15 +8,6 @@
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
   },
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ],
-    "plugins": [
-      "transform-object-rest-spread"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BrysonR/personal-site.git"
@@ -52,6 +43,7 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "react-hot-loader": "^3.1.2",
     "source-map-loader": "^0.2.3",

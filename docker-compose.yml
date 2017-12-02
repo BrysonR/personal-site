@@ -5,7 +5,6 @@ services:
     command: nodemon --inspect=0.0.0.0:5858 app.js
     volumes:
       - .:/app
-      - /app/node_modules
     ports:
       - "3000:3000"
       - "5858:5858"
