@@ -18,6 +18,8 @@ export class BRLogo extends React.Component<any, any> {
 
     componentDidMount () {
         this.initializeLogo();
+
+        window.onresize = () => this.initializeLogo();
     }
 
     initializeLogo () {
@@ -88,10 +90,6 @@ export class BRLogo extends React.Component<any, any> {
     }
 
     render () {
-        window.onresize = () => {
-            return this.initializeLogo();
-        }
-
         return (
             <div id="brLogo"></div>
         );
