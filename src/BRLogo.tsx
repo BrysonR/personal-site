@@ -44,7 +44,9 @@ export class BRLogo extends React.Component<any, any> {
             .height(logoStartHeight)
             .stroke({
                 color: 'white'
-            });
+            })
+            .skew(0, 180);
+            
     }
 
     animateLogo (drawing) {
@@ -79,6 +81,7 @@ export class BRLogo extends React.Component<any, any> {
             .animate({ease: '<>', duration: moveDuration})
             .x(left + 60)
             .y(17)
+            .flip('x')
             .width(logoFinalWidth)
             .height(logoFinalHeight)
             .fill(purple)
