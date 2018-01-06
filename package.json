@@ -4,7 +4,7 @@
   "description": "This is my personal site.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "pm2 start app.js -i 0 --name 'personal-site'",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
   },
