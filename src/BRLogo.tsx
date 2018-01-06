@@ -78,8 +78,8 @@ export class BRLogo extends React.Component<any, any> {
         const left = (window.innerWidth / 2) - (logoStartWidth / 2);
         
         drawing
-            .animate({ease: '<>', duration: moveDuration})
-            .x(left + 60)
+            .animate({ease: '-', duration: moveDuration})
+            .cx(window.innerWidth / 2)
             .y(17)
             .flip('x')
             .width(logoFinalWidth)
