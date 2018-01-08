@@ -4,7 +4,7 @@
   "description": "This is my personal site.",
   "main": "app.js",
   "scripts": {
-    "start": "pm2 start app.js -i 0 --name 'personal-site'",
+    "start": "webpack && pm2-runtime app.js -i 0 --name 'personal-site'",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
   },
@@ -27,7 +27,6 @@
     "@types/react-hot-loader": "^3.0.5",
     "@types/serve-static": "^1.13.1",
     "@types/svgjs.draggable": "^0.0.30",
-    "@types/typescript": "^2.0.0",
     "@types/webpack-env": "^1.13.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-register": "^6.26.0",
@@ -43,13 +42,11 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "react-hot-loader": "^3.1.2",
     "source-map-loader": "^0.2.3",
     "ts-loader": "^3.1.1",
     "typescript": "^2.6.1",
-    "typings": "^2.1.1",
     "webpack": "^3.8.1",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.20.0"
